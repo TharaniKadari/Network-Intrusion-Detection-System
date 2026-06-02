@@ -2,17 +2,9 @@
 
 ## Overview
 
-This project implements a Deep Learning-based Network Intrusion Detection System (NIDS) designed to identify malicious network activities and cyber attacks from network traffic data.
+This project implements a Deep Learning-based Network Intrusion Detection System (NIDS) for identifying malicious network activities and cyber attacks from network traffic data.
 
-The system analyzes network traffic patterns and classifies them as normal or intrusive, helping improve cybersecurity monitoring and threat detection.
-
----
-
-## Problem Statement
-
-Traditional security systems often struggle to detect sophisticated cyber attacks in real time.
-
-This project aims to develop an intelligent intrusion detection system using machine learning and deep learning techniques to accurately identify malicious network traffic.
+The system analyzes network traffic patterns and classifies them as either normal or intrusive, helping improve cybersecurity monitoring and threat detection.
 
 ---
 
@@ -20,29 +12,31 @@ This project aims to develop an intelligent intrusion detection system using mac
 
 Dataset Source:
 
-* Network Intrusion Detection Dataset (Kaggle)
+https://www.kaggle.com/datasets/sampadab17/network-intrusion-detection
 
-The dataset contains network traffic records with features representing various network characteristics and attack patterns.
+The dataset contains network traffic records with multiple features representing network behavior and attack patterns.
 
 ---
 
 ## Technologies Used
 
-* Python
-* Pandas
-* NumPy
-* Scikit-Learn
-* TensorFlow / Keras
-* Matplotlib
-* Jupyter Notebook
+- Python
+- Pandas
+- NumPy
+- Scikit-Learn
+- TensorFlow
+- Keras
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
 
 ---
 
 ## Project Workflow
 
-1. Data Collection
-2. Data Preprocessing
-3. Feature Engineering
+1. Data Preprocessing
+2. Feature Engineering
+3. Data Encoding
 4. Model Development
 5. Model Training
 6. Performance Evaluation
@@ -50,30 +44,110 @@ The dataset contains network traffic records with features representing various 
 
 ---
 
+## My Contributions
+
+- Data preprocessing and cleaning
+- Feature engineering
+- Deep learning model development
+- Optimizer comparison and evaluation
+- Performance visualization
+- Repository documentation
+
+---
+
 ## Results
 
-The model successfully classifies network traffic and identifies potential intrusions.
+The project evaluates multiple optimizers including:
 
-Evaluation metrics include:
+- Adam
+- RMSProp
+- Adagrad
+- Adadelta
+- FTRL
+- SGD
+- Adamax
+- Nadam
 
-* Accuracy
-* Precision
-* Recall
-* F1 Score
-* Confusion Matrix
+The best-performing models achieved approximately 99% accuracy on the test dataset.
+
+---
+
+## Visualizations
+
+### Dataset Distribution
+
+![Dataset Distribution](images/class_distribution.png)
+
+### Confusion Matrix
+
+![Confusion Matrix](images/confusion_matrix.png)
+
+### Optimizer Performance Comparison
+
+![Model Accuracy Comparison](images/model_accuracy_comparison.png)
+
+---
+
+## Project Structure
+
+```text
+Network-Intrusion-Detection-System
+│
+├── images
+│   ├── class_distribution.png
+│   ├── confusion_matrix.png
+│   └── model_accuracy_comparison.png
+│
+├── notebooks
+│   └── Network_Intrusion_Detection.ipynb
+│
+├── results
+│   └── README.md
+│
+├── requirements.txt
+│
+└── README.md
+```
+
+---
+
+## Installation
+
+```bash
+git clone <repository-url>
+cd Network-Intrusion-Detection-System
+pip install -r requirements.txt
+```
+
+---
+
+## Run the Project
+
+Open the notebook:
+
+```bash
+jupyter notebook
+```
+
+and run:
+
+```text
+Network_Intrusion_Detection.ipynb
+```
 
 ---
 
 ## Future Improvements
 
-* Real-time intrusion detection
-* Deployment as a web application
-* Integration with cloud monitoring systems
-* Advanced deep learning architectures
+- Real-time intrusion detection
+- Model deployment using Flask or FastAPI
+- Cloud-based monitoring
+- Advanced deep learning architectures
 
 ---
 
 ## Author
 
 Kadari Tharani
+
 AI & Machine Learning Engineering Student
