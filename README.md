@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a Deep Learning-based Network Intrusion Detection System (NIDS) for identifying malicious network activities and cyber attacks from network traffic data.
+This project implements a Deep Learning-based Network Intrusion Detection System (NIDS) to identify malicious network activities and cyber attacks from network traffic data.
 
 The system analyzes network traffic patterns and classifies them as either normal or intrusive, helping improve cybersecurity monitoring and threat detection.
 
@@ -20,55 +20,64 @@ The dataset contains network traffic records with multiple features representing
 
 ## Technologies Used
 
-- Python
-- Pandas
-- NumPy
-- Scikit-Learn
-- TensorFlow
-- Keras
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
+* Python
+* Pandas
+* NumPy
+* Scikit-Learn
+* TensorFlow
+* Keras
+* Matplotlib
+* Seaborn
+* Jupyter Notebook
 
 ---
 
 ## Project Workflow
 
-1. Data Preprocessing
-2. Feature Engineering
-3. Data Encoding
-4. Model Development
-5. Model Training
-6. Performance Evaluation
-7. Intrusion Classification
+1. Data Collection
+2. Data Preprocessing
+3. Feature Engineering
+4. Data Encoding
+5. Deep Learning Model Development
+6. Model Training
+7. Performance Evaluation
+8. Intrusion Classification
 
 ---
 
-## My Contributions
+## Model Evaluation
 
-- Data preprocessing and cleaning
-- Feature engineering
-- Deep learning model development
-- Optimizer comparison and evaluation
-- Performance visualization
-- Repository documentation
+The project evaluates multiple optimization algorithms, including:
+
+* Adam
+* RMSProp
+* Adagrad
+* Adadelta
+* FTRL
+* SGD
+* Adamax
+* Nadam
+
+Performance is evaluated using:
+
+* Accuracy
+* Precision
+* Recall
+* F1 Score
+* Confusion Matrix
 
 ---
 
 ## Results
 
-The project evaluates multiple optimizers including:
+The deep learning model achieved high classification performance in detecting malicious network traffic and distinguishing it from normal traffic.
 
-- Adam
-- RMSProp
-- Adagrad
-- Adadelta
-- FTRL
-- SGD
-- Adamax
-- Nadam
+Key observations:
 
-The best-performing models achieved approximately 99% accuracy on the test dataset.
+* High classification accuracy across multiple optimizers
+* Strong intrusion detection capability
+* Low false positive and false negative rates
+* Consistent performance across evaluation metrics
 
 ---
 
@@ -84,11 +93,11 @@ The best-performing models achieved approximately 99% accuracy on the test datas
 
 ### Optimizer Performance Comparison
 
-![Model Accuracy Comparison](images/model_accuracy_comparison.png)
+![Optimizer Comparison](images/model_accuracy_comparison.png)
 
 ---
 
-## Project Structure
+## Repository Structure
 
 ```text
 Network-Intrusion-Detection-System
@@ -121,28 +130,31 @@ pip install -r requirements.txt
 
 ---
 
-## Run the Project
+## Running the Project
 
-Open the notebook:
+Launch Jupyter Notebook:
 
 ```bash
 jupyter notebook
 ```
 
-and run:
+Open:
 
 ```text
 Network_Intrusion_Detection.ipynb
 ```
 
+and run all cells sequentially.
+
 ---
 
-## Future Improvements
+## Future Enhancements
 
-- Real-time intrusion detection
-- Model deployment using Flask or FastAPI
-- Cloud-based monitoring
-- Advanced deep learning architectures
+* Real-time intrusion detection
+* Deployment as a web application
+* Cloud-based monitoring integration
+* Advanced deep learning architectures
+* Live network traffic analysis
 
 ---
 
@@ -150,4 +162,4 @@ Network_Intrusion_Detection.ipynb
 
 Kadari Tharani
 
-AI & Machine Learning Engineering Student
+Artificial Intelligence & Machine Learning Engineering Student
